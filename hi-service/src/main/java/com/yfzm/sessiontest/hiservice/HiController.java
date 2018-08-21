@@ -15,8 +15,7 @@ public class HiController {
             return "Error when parsing session";
         }
         String sessionId = (String) session.getAttribute("userId");
-        Calculator calculator = new Calculator();
-        return sessionId + String.valueOf(calculator.add(1, 2));
+        return sessionId + String.valueOf(Calculator.add(1, 2));
     }
 
 }
