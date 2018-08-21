@@ -6,7 +6,7 @@
     <groupId>com.yfzm</groupId>
     <artifactId>sessiontest</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <name>sessiontest</name>
     <description>Demo project for Spring Boot</description>
@@ -55,6 +55,7 @@
         <module>user-service</module>
         <module>gateway</module>
         <module>hi-service</module>
+        <module>util-demo</module>
     </modules>
 
     <build>

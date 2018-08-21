@@ -1,5 +1,6 @@
 package com.yfzm.sessiontest.hiservice;
 
+import com.yfzm.util.utildemo.Calculator;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,7 +14,9 @@ public class HiController {
         if (session == null || session.getAttribute("userId") == null) {
             return "Error when parsing session";
         }
-        return (String) session.getAttribute("userId");
+        String sessionId = (String) session.getAttribute("userId");
+        Calculator calculator = new Calculator();
+        return sessionId + String.valueOf(calculator.add(1, 2));
     }
 
 }
