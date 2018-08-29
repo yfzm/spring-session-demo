@@ -13,3 +13,6 @@ spring:
 #    port: 6379
     password: 123456
 #
+r:
+  pA: 1
+  pB: 4
